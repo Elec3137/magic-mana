@@ -23,6 +23,7 @@
     <button onclick={() => values.set(value[0], value[1] - 100)}>-100</button>
     <button onclick={() => values.set(value[0], value[1] - 10)}>-10</button>
     <button onclick={() => values.set(value[0], value[1] - 1)}>-1</button>
+    <img src="/{value[0]}.webp" alt="mana type icon">
     {value[0]} {value[1]}
     <button onclick={() => values.set(value[0], value[1] + 1)}>+1</button>
     <button onclick={() => values.set(value[0], value[1] + 10)}>+10</button>
