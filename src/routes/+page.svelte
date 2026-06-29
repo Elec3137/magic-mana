@@ -13,7 +13,7 @@
     ["blue", 0],
     ["black", 0],
     ["red", 0],
-    ["green", 100],
+    ["green", 0],
     ["colorless", 0],
   ]);
 </script>
