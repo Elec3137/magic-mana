@@ -13,6 +13,13 @@ export default defineConfig({
 
 			// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 			adapter: adapter(),
-		})
-	]
+	    output: {
+        bundleStrategy: 'inline'
+	    }
+		}),
+	],
+	build: {
+		// inline all imported assets
+		assetsInlineLimit: Infinity
+	}
 });
