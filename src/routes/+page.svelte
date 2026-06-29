@@ -1,5 +1,5 @@
 <style>
-  :root {
+  :root, button {
     background-color: black;
     color: white;
   }
