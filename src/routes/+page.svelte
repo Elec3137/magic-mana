@@ -24,6 +24,7 @@
     <button onclick={() => values.set(name, value - 50)}>-50</button>
     <button onclick={() => values.set(name, value - 10)}>-10</button>
     <button onclick={() => values.set(name, value - 1)}>-1</button>
+    <button style="background-color: red;" onclick={() => values.set(name, 0)}>RESET</button>
     <button onclick={() => values.set(name, value + 1)}>+1</button>
     <button onclick={() => values.set(name, value + 10)}>+10</button>
     <button onclick={() => values.set(name, value + 50)}>+50</button>
