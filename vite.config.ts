@@ -15,11 +15,15 @@ export default defineConfig({
 			adapter: adapter(),
 	    output: {
         bundleStrategy: 'inline'
-	    }
+	    },
+
+			paths: {
+				base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			},
 		}),
 	],
 	build: {
 		// inline all imported assets
 		assetsInlineLimit: Infinity
-	}
+	},
 });
