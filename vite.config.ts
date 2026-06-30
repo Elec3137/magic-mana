@@ -18,7 +18,7 @@ export default defineConfig({
 	    },
 
 			paths: {
-				base: import.meta.env.BASE_PATH
+				base: "/elec3137.github.io"
 			},
 		}),
 	],
