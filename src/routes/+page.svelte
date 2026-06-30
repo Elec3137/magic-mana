@@ -3,6 +3,13 @@
     background-color: black;
     color: white;
   }
+  .padded {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+  .danger {
+    background-color: red;
+  }
 </style>
 
 <script lang="ts">
@@ -24,9 +31,9 @@
     <button onclick={() => values.set(name, value - 100)}>-100</button>
     <button onclick={() => values.set(name, value - 50)}>-50</button>
     <button onclick={() => values.set(name, value - 10)}>-10</button>
-    <button onclick={() => values.set(name, value - 1)}>-1</button>
-    <button style="background-color: red;" onclick={() => values.set(name, 0)}>RESET</button>
-    <button onclick={() => values.set(name, value + 1)}>+1</button>
+    <button class=padded onclick={() => values.set(name, value - 1)}>-1</button>
+    <button class=danger onclick={() => values.set(name, 0)}>RESET</button>
+    <button class=padded onclick={() => values.set(name, value + 1)}>+1</button>
     <button onclick={() => values.set(name, value + 10)}>+10</button>
     <button onclick={() => values.set(name, value + 50)}>+50</button>
     <button onclick={() => values.set(name, value + 100)}>+100</button>
