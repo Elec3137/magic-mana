@@ -18,7 +18,7 @@ export default defineConfig({
 	    },
 
 			paths: {
-				base: "/elec3137.github.io"
+				base: "/magic-mana"
 			},
 		}),
 	],
