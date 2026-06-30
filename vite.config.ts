@@ -18,7 +18,7 @@ export default defineConfig({
 	    },
 
 			paths: {
-				base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+				base: import.meta.env.BASE_PATH
 			},
 		}),
 	],
